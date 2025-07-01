@@ -1,7 +1,6 @@
-import * as pdfjsLib from './pdf.umd.js';
-
-// 設定 worker 路徑
-pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.js';
+// 不要 import pdfjsLib，直接用全域變數
+window.pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.js';
+const pdfjsLib = window.pdfjsLib;
 
 // PDF 解析與檔案匯入
 const fileInput = document.getElementById('fileInput');
