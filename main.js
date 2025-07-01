@@ -1,4 +1,4 @@
-import * as pdfjsLib from './pdf.js';
+import * as pdfjsLib from './pdf.umd.js';
 
 // 設定 worker 路徑
 pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.js';
